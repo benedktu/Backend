@@ -1,5 +1,6 @@
-import fs from "fs";
-import sillyname from "sillyname";
+
+// var sillyName = generateName();
+// console.log(`my name is ${sillyName}`);
 
 
 // fs.writeFile("message.txt", "This is a file I have created using Node module on ESM import format!", (err) => {
