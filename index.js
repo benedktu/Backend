@@ -1,4 +1,6 @@
 import fs from "fs";
+import sillyname from "sillyname";
+
 
 // fs.writeFile("message.txt", "This is a file I have created using Node module on ESM import format!", (err) => {
 //    if (err) {
@@ -7,9 +9,12 @@ import fs from "fs";
 //    console.log("The file has been created successfully!");
 // })
 
-fs.readFile("./message.txt", (err, data) => {
-   if (err) {
-      throw err;
-   }
-   console.log(data.toString());
-})
+// fs.readFile("./message.txt", (err, data) => {
+//    if (err) {
+//       throw err;
+//    }
+//    console.log(data.toString());
+// })
+
+
+
