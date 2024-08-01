@@ -1,3 +1,7 @@
+import {randomSuperhero} from "superheroes" ;
+
+
+console.log( ` I am ${randomSuperhero()}`); // "Batman" or "Spiderman" or any other superhero name
 
 // var sillyName = generateName();
 // console.log(`my name is ${sillyName}`);
