@@ -1,5 +1,6 @@
-import {randomSuperhero} from "superheroes" ;
+import superheroes from "superheroes" ;
 
+const name = superheroes.random();
 
 console.log( ` I am ${randomSuperhero()}`); // "Batman" or "Spiderman" or any other superhero name
 
@@ -13,12 +14,13 @@ console.log( ` I am ${randomSuperhero()}`); // "Batman" or "Spiderman" or any ot
 //    }
 //    console.log("The file has been created successfully!");
 // })
+// import fs from "node:fs";
 
-// fs.readFile("./message.txt", (err, data) => {
+// fs.readFile("./message.txt", "utf-8", (err, data) => {
 //    if (err) {
 //       throw err;
 //    }
-//    console.log(data.toString());
+//    console.log("the deed has been done!");
 // })
 
 
