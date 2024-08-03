@@ -36,7 +36,7 @@ inquirer
       name: "userName" },
     {
       message: "what is your age?",
-      name: "userAge",
+      age: "userAge",
     },
   ])
   .then((answers) => {
