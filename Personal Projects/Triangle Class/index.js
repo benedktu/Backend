@@ -25,7 +25,6 @@
 // console.log([...square.getSides()]); // [10, 10, 10, 10]
 
 // AREA OF A TRIANGLE: 1/2base x height
-const AreaOutputArray = [];
 
 class Triangle {
   constructor(base, height) {

@@ -1,0 +1,11 @@
+{
+  "name": "triangle-class",
+  "version": "1.0.0",
+  "description": "class to calculated the area of a triangle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benedict Uduogu",
+  "license": "ISC"
+}

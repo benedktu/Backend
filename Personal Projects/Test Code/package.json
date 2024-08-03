@@ -1,7 +1,8 @@
 {
-  "name": "personal-projects",
+  "name": "test-code",
   "version": "1.0.0",
-  "main": "TriangleAreaClass.js.js",
+  "main": "test.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
