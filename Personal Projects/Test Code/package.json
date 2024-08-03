@@ -8,5 +8,8 @@
   },
   "author": "Benedict Uduogu",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "inquirer": "^10.1.6"
+  }
 }
