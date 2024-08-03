@@ -1,0 +1,1 @@
+This is a word document that i have created using the node module: writeFile in ES mode.
