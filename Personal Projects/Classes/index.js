@@ -67,6 +67,7 @@ let userList = [userOne, userTwo, userThree];
 // Correct usage of deleteUser
 userList = admin.deleteUser(userList, userThree);
 
-// console.log(userList);
+console.log(userList);
 
 console.log(admin.userName)
+
