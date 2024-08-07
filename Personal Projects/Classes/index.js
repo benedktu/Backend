@@ -62,7 +62,7 @@ let userTwo = new User("jike.exe", "Ejike");
 let userThree = new User("uduogu.exe", "Uduogu");
 let admin = new Admin("ceo.exe", "ceo");
 
-// let userList = [userOne, userTwo, userThree];
+let userList = [userOne, userTwo, userThree];
 
 // Correct usage of deleteUser
 userList = admin.deleteUser(userList, userThree);
