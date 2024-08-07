@@ -1,1 +1,0 @@
-{"street":"Usuma Street","pet":"Tiger"}
