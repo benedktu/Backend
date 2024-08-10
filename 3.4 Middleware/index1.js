@@ -5,7 +5,8 @@ import bodyParser from "body-parser";
 import { writeFile } from 'node:fs';
 import { Buffer } from 'node:buffer';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+// DOESN'T USUALLY CHANGE, SHOULDN'T USUALLY CHANGE
+const __dirname = dirname(fileURLToPath(import.meta.url)); 
 
 const app = express();
 const port = 3000;
@@ -13,7 +14,6 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  console.log(__dirname + "/public/index.html");
   res.sendFile(__dirname + "/public/index.html");
 });
 
