@@ -13,6 +13,7 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
+  console.log(__dirname + "/public/index.html");
   res.sendFile(__dirname + "/public/index.html");
 });
 
@@ -21,10 +22,10 @@ app.post("/submit", (req, res) => {
   console.log(formInput);
   const data = JSON.stringify(formInput);
 
-  writeFile('formInput.txt', data, (err) => {
-  if (err) throw err;
-  console.log('The file has been saved!');
-}); 
+//   writeFile('formInput.txt', data, (err) => {
+//   if (err) throw err;
+//   console.log('The file has been saved!');
+// }); 
 })
 
 app.listen(port, () => {
