@@ -1,41 +1,31 @@
-import express from 'express';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import bodyParser from 'body-parser';
-
-const __dirname = dirname(fileURLToPath(import.meta.url)); 
+import express from "express";
 
 const app = express();
 const port = 6969;
 
-app.use(bodyParser.urlencoded({ extended: true }));
 
-function daily_message(req, res, next) {
-    const date = new Date();
-    const day = date.getDay();
+const today = new Date();
+const day = today.getDay();
 
-    switch (day) {
-        case 0:
-            res.send('Today is Sunday. Go to church!');
-            break;
-        case 1:
-            res.send('Today is Monday, Go to werk!');
-            break;
-        case 2:
-            res.send('Chewsday innit?');
-            break; 
-    default: res.send('...');     
-    }   
-    next();
+let typ = "a weekday";
+let adv = "it's time to put in the work!";
+
+if (today === 0 || today === 6) {
+    typ = "the weekend"
+    adv = "it's time to chill out!";
 }
 
-app.use(daily_message);
 
-app.get('/', (req, res) => {
-   res(daily_message);
+app.get("/", (req, res) => {
+    res.render("index.ejs", { 
+        day_type: typ,
+        day_advice: adv
+     });
+
+
 });
 
 
 app.listen(port, ()=> {
-    console.log(`Server running on port ${port}`);
+    console.log(`Server running on port ${port}.`);
 });
