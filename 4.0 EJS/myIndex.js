@@ -3,7 +3,6 @@ import express from "express";
 const app = express();
 const port = 6969;
 
-
 function daily_message(req, res, next) {
     const date = new Date();
     const day = date.getDay();
@@ -40,7 +39,6 @@ app.use(daily_message);
 app.get("/", (req, res) => {
        res(daily_message);
 });
-
 
 app.listen(port, ()=> {
     console.log(`Server running on port ${port}.`);
