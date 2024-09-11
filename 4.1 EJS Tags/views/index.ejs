@@ -13,9 +13,11 @@
 
     <% if (seconds % 2===0) { %>
     <ul>
-      <% for( let index = 0; index < items.length; index++ ) { %>
-      <li><%= items[index] %></li>
-      <% } %>
+      <% items.forEach((fruit) => { %>
+        <li>
+          <%= fruit %>
+        </li>
+      <% }) %>
     </ul>
 
     <% } else { %>

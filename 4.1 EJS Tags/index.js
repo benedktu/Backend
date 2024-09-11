@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   const data = {
     title: "EJS Tags",
     seconds: new Date().getSeconds(),
-    items: ["apple", "banana", "cherry"],
+    items: ["apple", "banana", "cherry","beans", "fishe"],
     htmlContent: "<strong>This is some strong text</strong>",
   };
   res.render("index.ejs", data);
