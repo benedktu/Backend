@@ -8,6 +8,7 @@
 
   <body>
     <h1>FRUITS BY THE EVEN SECOND</h1>
+    <h2>Learning about <%= title %></h2>
     <p>Current second: <%= seconds %></p>
 
     <% if (seconds % 2===0) { %>
@@ -22,9 +23,9 @@
     <% } %>
 
     <p>
-      <!-- HTML content goes here -->
+      <%- htmlContent %>
     </p>
 
-    <!-- Footer goes here -->
+    <%- include("footer.ejs") %>
   </body>
 </html>
