@@ -6,8 +6,6 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(htmlContent);
-
 app.get("/", (req, res) => {
   const htmlContent = {
     preSubmitMessage: "Write your name here:",
