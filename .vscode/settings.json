@@ -8,5 +8,7 @@
     "terminal.integrated.fontFamily": "'Cascadia Code'",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "400",
-    "editor.cursorStyle": "block"
+    "editor.cursorStyle": "block",
+"editor.detectIndentation": false,
+"editor.tabSize": 5
 }

@@ -5,26 +5,26 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
+const preMessage = "Write your name here:";
 
 app.get("/", (req, res) => {
+     const preMessage = "Write your name here:";
   res.render("index.ejs");
-  
-  const htmlContent = {
-    preSubmitMessage: "Write your name here:",
-    postSubmitMessage: `Hello, There are ${fullNameLength} characters in your name.`,
-    concactenateNames: function() { 
-      const fullName = formInput.fName + formInput.lName;
-      const fullNameLength = fullName.length;
-      return fullNameLength;
-    }
-  }
-
 });
 
 app.post("/submit", (req, res) => {
   const formInput = req.body;
-  console.log(formInput);
+  const fullName = formInput["fName"] + formInput["lName"];
+  const fullNameLength = fullName.length;
+  const postMessage = `Hello ${formInput["fName"]}, there are ${fullNameLength} characters in your name.`;
+
+  res.render("index.ejs", {
+    preMessage,     
+    postMessage,
+    fullNameLength,
+  });
+
+  console.log(fullNameLength);
 });
 
 app.listen(port, () => {
