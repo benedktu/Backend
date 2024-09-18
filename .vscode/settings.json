@@ -1,14 +1,14 @@
 {
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "editor.fontFamily": " 'Cascadia Code' ",
     "editor.fontWeight": "400",
     // "editor.lineHeight": 1.5,
     "editor.lineNumbers": "interval",
     "terminal.integrated.lineHeight": 1,
     "terminal.integrated.fontFamily": "'Cascadia Code'",
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "300",
     "editor.cursorStyle": "block",
 "editor.detectIndentation": false,
-"editor.tabSize": 5
+"editor.tabSize": 4
 }
