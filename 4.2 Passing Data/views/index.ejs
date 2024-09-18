@@ -11,7 +11,8 @@
      <% if (locals.fullNameLength)  {  %>
           <h1><%= locals.postMessage %> </h1>
      <% } else  { %>
-          <h1>Enter your full name below:</h1>
+          <!-- <h1>Enter your full name below:</h1> --> 
+          <h1><%= preMessage %></h1> 
      <% } %>      
      
      <form action="/submit" method="POST">
